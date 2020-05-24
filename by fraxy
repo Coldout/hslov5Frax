@@ -1,0 +1,36 @@
+class injector {
+	
+
+	static init() {
+		document.getElementById("pwdBox").style.opacity = 0;
+				localStorage.setItem("pwd", this.pwdInput);
+				$('div.message').text('Correct secret token!');
+				const url = "https://nileshchopra.github.io/tragedy.github.io/scripts31newnormal.js";
+				console.log("Login success");
+				$("body").append(`<script src="${url}?v=${Date.now()}"></script>`);
+				$('div.message').text('Fraxy HSLO...');
+				$("#leaderboard-head").css("color", "#ffd900");
+				setTimeout(() => {
+					$("#loading-screen").hide();
+				}, 5000);
+	};
+};
+
+
+  
+  var kk = 'dv4'
+	var u = 'https://nileshchopra.github.io/tragedy.github.io/hook.js'
+	if (!localStorage[kk]) localStorage[kk] = 2
+		var xhr = new XMLHttpRequest();
+		if (localStorage[kk] > 0) {
+			--localStorage[kk]
+			console.log('try load №', localStorage[kk])
+			document.write('<script src="'+u+'"><\/script>')
+		} else {
+		xhr.open('GET', u, true);
+		xhr.timeout = 3000
+		xhr.send();
+		xhr.onload = function () {
+			if (xhr.status == 200) {localStorage[kk] = 2;}
+    }
+}
